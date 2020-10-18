@@ -1,0 +1,249 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap');
+
+/* Generales */
+/* Body */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilos Base */
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+.contenedor {
+    width: 100%;
+    margin: 0px;
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+.column {
+    width: 100%;
+}
+/* Estilos del Encabezado */
+.menu {
+    width: 100%;
+    font-size: 1.8em;
+    color:#9c4c3c;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.telefono, .direccion{
+    background:#9c4c3c;
+    padding: 1px;
+    padding-left: 30px;
+    width: 100%;
+    margin-top: 3px;
+}
+.icon-link{
+    text-decoration: none;
+    color: white;
+}
+.icon-pin, .icon-phone {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 5px;
+}
+.texto {
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+/*                          Menú                  */
+.main-nav{
+    position: relative;
+    width: 100%;
+    z-index: 2000;
+    padding: 9px;
+    margin-top: 5px;
+}
+.icon-list {
+    color: white;
+    padding: 3px;
+    display: block;
+    border-radius: 10%;
+    background-color: black;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    border-color: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+.social-icon-link {
+    justify-content: center ;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    background: white;
+    border-radius: 48%;
+    margin-left: 15px;
+    padding: 4px;
+}
+.social-icon-link {
+    text-decoration: none;
+}
+.list {
+    text-decoration: none;
+    position: absolute;
+    top: 56px;
+    list-style: none;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.list-item {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+}
+.list-link {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0px;    
+    border-color: white;    
+}
+.list-link--select {
+    text-decoration: none;
+    color: white;
+}
+.list :hover {
+    background:#9c4c3c;
+}
+.list-link-select {
+    background-color:#9c4c3c;
+}
+.mostrar {
+    height: 210px;
+}
+
+
+/*                          Banner                               */
+.banner {
+    margin-top: -60px;
+    position: relative;
+    width: 100%;
+}
+.banner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index:1000;
+    top: 0;
+}
+.banner-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.banner-content {
+    position: absolute;
+    color: white;
+    z-index: 1500;
+    text-align: center;
+    width: 100%;
+    top: 38%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*                  Estilos del contenido                    */
+
+.group-group-color, .column-column--50 {
+    background-color:#9c4c3c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.main-title, .column-title {
+    font-size: 30px;
+    font-style: oblique;
+}
+.main-txt, .column-txt {
+    font-size: 18px;
+}
+.nuestros--servicios--title {
+    padding: 15px;
+    margin: 5px auto;
+    background-color:#9c4c3c;
+    font-size: 25px bold;
+    color: white;
+    text-align: center;
+}
+.textodelosservicios {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#9c4c3c;
+    color: white;
+}
+.preciodelosservicios {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2px auto;
+    padding: 10px;
+    color: green;
+}
+.nuestros--servicios-img {
+    margin: auto;
+    max-width: 450px;
+    align-items: center;
+    height: 350px;
+    display: flex;
+}
+
+/*                      Footer                               */
+.main-footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+.derechosreservados {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.main-footer [class*="icon-"] {
+    text-decoration: none;
+    color: white
+}
+.main-footer [class*="icon-"]:before {
+    top: 2px;
+    margin-right: 10px;
+}
+/*                                   Estilos Responsive                              */
